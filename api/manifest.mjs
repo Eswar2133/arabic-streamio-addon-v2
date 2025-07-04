@@ -6,7 +6,16 @@ export default function handler(req, res) {
     name: "Arabic Classics",
     description: "Arabic-language movies from the Internet Archive. ✅ Legal & universal. ⚡ For best quality playback, use Real-Debrid.",
     logo: "https://upload.wikimedia.org/wikipedia/commons/8/87/Internet_Archive_logo_and_wordmark.svg",
-    resources: ["catalog", "stream"],
+    resources: [
+      {
+        name: "stream",
+        types: ["movie"]
+      },
+      {
+        name: "catalog",
+        types: ["movie"]
+      }
+    ],
     types: ["movie"],
     catalogs: [
       {
