@@ -1,7 +1,5 @@
 {
   "routes": [
-    { "src": "/api/manifest.json", "dest": "/api/manifest.mjs" },
-    { "src": "/api/catalog", "dest": "/api/catalog.mjs" },
-    { "src": "/api/stream", "dest": "/api/stream.mjs" }
+    { "src": "/api/(.*)", "dest": "/api/$1.mjs" }
   ]
 }
